@@ -32,7 +32,8 @@
         window.WebSocket = window.MozWebSocket;
     }
     if (window.WebSocket) {
-        socket = new WebSocket("ws://localhost:8080/ws");
+        // socket = new WebSocket("ws://localhost:8080/ws");
+        socket = new WebSocket("ws://192.168.137.1:8080/ws");
         socket.onmessage = function (event) {
             let data = JSON.parse(event.data);
             myChart.setOption({

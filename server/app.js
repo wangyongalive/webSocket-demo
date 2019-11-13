@@ -35,6 +35,6 @@ setInterval(function () {
             }
         });
     }
-}, 2000);
+}, 5000);
 
 
